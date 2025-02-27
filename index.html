@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ticket Management System</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+
+<div class="background-img">
+<div class="ticket-section">
+    <form id="ticket-form">
+        <h2>Sistema de Gestión de Tickets</h2>
+        <input type="text" id="name" placeholder="Nombre" required><br>
+        <input type="text" id="seat" placeholder="Apellidos" required><br>
+        <input type="date" id="date" required><br>
+        <input type="text" id="from" placeholder="Solicitud" required><br>
+        <input type="text" id="to" placeholder="Informes" required><br>
+        <input type="submit" value="Agendar Ticket">
+    </form>
+    <button id="view-history-btn">Ver Historial</button>
+</div>
+</div>
+<div id="ticket-history" style="display: none;">
+    <h3>Ticket History</h3>
+    <table id="history-table">
+        <thead>
+            <tr>
+                <th>Ticket ID</th>
+                <th>Nombre</th>
+                <th>Soporte</th>
+                <th>Fecha</th>
+                <th>Registro</th>
+                <th>Notificaciones</th>
+                <th>Informes</th>
+            </tr>
+        </thead>
+        <tbody id="history-table-body">
+            <!-- Ticket history rows will be dynamically added here -->
+        </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
